@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="bootstrap 5.2/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap 5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+
+    <div class="container-fluid">
+        <div class="translate-middle top-50 start-50 position-absolute">
+            <form action="" class="bg-white rounded-3 p-3">
+                <h1 class="text-dark display-3 mb-5">Form Validation</h1>
+                <input type="text" class="form-control" placeholder="type your name" id="name">
+                <span class="text-danger ms-2" id="name-span"></span>
+                <input type="text" class="form-control mt-2" placeholder="type your lastname" id="lastname">
+                <span class="text-danger ms-2" id="lastname-span"></span>
+                <input type="text" class="form-control mt-2" placeholder="type your email" id="email">
+                <span class="text-danger ms-2" id="email-span"></span>
+                <input type="password" class="form-control mt-2" placeholder="type your password" id="password">
+                <span class="text-danger ms-2" id="password-span"></span>
+                <input type="password" class="form-control mt-2" placeholder="repeat your password" id="password-re">
+                <span class="text-danger ms-2" id="password-re-span"></span>
+                <button type="submit" class="btn btn-outline-primary w-100 d-block">submit</button>
+                <span class="text-success d-flex justify-content-center" id="submit-span"></span>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
