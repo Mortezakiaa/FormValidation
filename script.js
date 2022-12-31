@@ -58,16 +58,11 @@ document.querySelector('form').addEventListener('submit' , (e)=>{
     }
 
     if(senddata){
-        fetch(url , {
-            method : 'post',
-            headers : {'Content-type' : 'application/json'},
-            body : JSON.stringify(data)
-        })
-        .then(res =>{return res.json()})
-        .then(result =>{
+        axios.post(url)
+        .then(res =>{
             submitspan.innerText = "Your profile has been successfully registered";
         })
-        .catch(err => {
+        .catch(err =>{
             submitspan.innerText = "Your profile was not regitered please try again";
         })
     }
